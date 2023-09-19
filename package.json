@@ -1,0 +1,27 @@
+{
+  "name": "tailwind-obfuscator",
+  "version": "1.0.14",
+  "description": "Plugin for SvelteKit that helps you protect your stylesheet code by obfuscating TailwindCSS class names.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "twobfus": "src/cli.js"
+  },
+  "keywords": [
+    "sveltekit",
+    "tailwindcss",
+    "obfuscation"
+  ],
+  "author": "Phanuprat Suwannachan",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xinnypie/twobfuscator.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^8.4.29"
+  }
+}
