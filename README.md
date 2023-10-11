@@ -68,16 +68,26 @@ $ pnpm add -D tailwind-obfuscator
 ## Usage
 
 ### Build your CSS with Tailwind CLI
-
 ```sh
-$ npx tailwindcss -i <input path of where css file includes @tailwind directives> -o <output path for built CSS>
+$ npx tailwindcss -i <input CSS file> -o <output CSS file>
 ```
+Example
+```sh
+$ npx tailwindcss -i src/app.css -o build/client/_app/immutable/assets/obfuscated.css
+```
+The -i flag indicates the input CSS file that includes @tailwind directives, while -o flag indicates the output CSS file. You can minify your CSS by adding the --minify flag
 
 ### Run the `twobfus` command to obfuscate your Tailwind CSS classes
 
 ```sh
 $ npx twobfus --tw <path of built CSS file> <length of class name you want>
 ```
+Example
+```sh
+$ npx twobfus --tw build/client/_app/immutable/assets/obfuscated.css 5
+```
+The `--tw` flag indicates the path of the built CSS file, while the second parameter indicates the length of the class name you want. The default value is 5.
+
 
 ### Config your `svelte.config.js` import and add it to the preprocess part
 ```javascript
