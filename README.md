@@ -65,7 +65,6 @@
 
 ## Roadmap
 
-- [ ] Zero Config
 - [x] Customizable classname length/prefix/suffix
 - [ ] Customizable classname prefix/suffix
 - [x] Support for SveteKit
