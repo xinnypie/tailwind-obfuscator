@@ -68,6 +68,7 @@
 - [x] Customizable classname length/prefix/suffix
 - [ ] Customizable classname prefix/suffix
 - [x] Support for SveteKit
+- [ ] Zero Config
 - [ ] Support for Vite
 - [ ] Support for Webpack
 - [ ] Support for Turbopack
